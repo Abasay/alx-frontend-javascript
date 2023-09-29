@@ -5,23 +5,24 @@ export default class Pricing {
     this._amount = amount;
     this._currency = currency;
   }
-
-  //get amount
+  // get amount
   get amount() {
     return this._amount;
   }
-  //set amount
+
+  // set amount
   set amount(val) {
     this._amount = val;
   }
-  //get currency
+
+  // get currency
   get currency() {
     return this._currency;
   }
+  //set currency
   set currency(val) {
     this._currency = val;
   }
-
   //display full price method
   displayFullPrice() {
     return `${this._amount} ${this._currency.name} ${this._currency.code}`
